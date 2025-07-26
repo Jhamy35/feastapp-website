@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>FeastyApp - Application Cuisine IA | Recettes Personnalisées & Cuisine Collaborative</title>
+    <meta name="description" content="FeastyApp : L'application de cuisine intelligente avec IA Gemini. Recettes personnalisées, cuisine collaborative en famille, listes de courses automatiques. Téléchargez gratuit sur Google Play.">
+    <meta name="keywords" content="application cuisine, recettes IA, cuisine intelligente, recettes personnalisées, cuisine collaborative, recettes famille, intelligence artificielle cuisine, génération recettes automatique, liste courses automatique, application culinaire, cuisine groupe, recettes gemini, app cuisine gratuite, feastyapp">
+    <meta name="author" content="HAMELIN JEAN LUC - Studio Jhamy">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="fr">
+    <meta name="geo.region" content="FR">
+    <meta name="geo.placename" content="Rennes, France">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://feastyapp.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://feastyapp.com">
+    <meta property="og:title" content="FeastyApp - Application Cuisine IA | Recettes Personnalisées">
+    <meta property="og:description" content="Révolutionnez votre cuisine en groupe avec FeastyApp ! IA Gemini, recettes personnalisées, cuisine collaborative famille. Gratuit sur Google Play.">
+    <meta property="og:image" content="https://feastyapp.com/images/feastyapp-og-image.jpg">
+    <meta property="og:site_name" content="FeastyApp">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://feastyapp.com">
+    <meta property="twitter:title" content="FeastyApp - Application Cuisine IA | Recettes Personnalisées">
+    <meta property="twitter:description" content="Révolutionnez votre cuisine en groupe avec FeastyApp ! IA Gemini, recettes personnalisées, cuisine collaborative famille.">
+    <meta property="twitter:image" content="https://feastyapp.com/images/feastyapp-twitter-image.jpg">
+    
+    <!-- App Store -->
+    <meta name="apple-itunes-app" content="app-id=com.jhamy35.feastyapp.revival">
+    <meta name="google-play-app" content="app-id=com.jhamy35.feastyapp.revival">
+    
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "FeastyApp: Cooking & Recipes",
+        "description": "Application de cuisine intelligente avec IA Gemini pour des recettes personnalisées et cuisine collaborative en famille",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "ratingCount": "50"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "HAMELIN JEAN LUC"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Studio Jhamy",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "5 All. de Lanester",
+                "addressLocality": "Rennes",
+                "postalCode": "35700",
+                "addressCountry": "FR"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+33662277979",
+                "contactType": "customer service",
+                "email": "studio.jhamy@gmail.com"
+            }
+        },
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.jhamy35.feastyapp.revival",
+        "screenshot": "https://feastyapp.com/images/screenshots/",
+        "featureList": [
+            "Découverte intelligente de 1000+ ingrédients",
+            "Intelligence artificielle culinaire Gemini",
+            "Cuisine collaborative en groupe",
+            "Recettes personnalisées automatiques",
+            "Listes de courses générées par IA",
+            "Consensus automatique des goûts",
+            "Respect des allergies alimentaires"
+        ],
+        "softwareVersion": "3.3.22",
+        "datePublished": "2025-01-01",
+        "inLanguage": "fr"
+    }
+    </script>
+    
+    <!-- Additional Structured Data for Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Studio Jhamy",
+        "url": "https://feastyapp.com",
+        "logo": "https://feastyapp.com/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+33662277979",
+            "contactType": "customer service",
+            "email": "studio.jhamy@gmail.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "5 All. de Lanester",
+            "addressLocality": "Rennes",
+            "postalCode": "35700",
+            "addressCountry": "FR"
+        },
+        "sameAs": [
+            "https://play.google.com/store/apps/developer?id=Jhamy35"
+        ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link href="https://cdn.tailwindcss.com/3.4.0/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <!-- Header -->
+    <header class="gradient-bg text-white" role="banner">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between" role="navigation" aria-label="Navigation principale">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center" aria-hidden="true">
+                        <i class="fas fa-utensils text-xl" title="Icône cuisine"></i>
+                    </div>
+                    <span class="text-2xl font-bold">FeastyApp - Cuisine IA</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#fonctionnalites-cuisine-ia" class="hover:text-gray-200 transition" aria-label="Fonctionnalités de cuisine intelligente">Fonctionnalités IA</a>
+                    <a href="#telecharger-app-cuisine" class="hover:text-gray-200 transition" aria-label="Télécharger l'application cuisine">Télécharger</a>
+                    <a href="#contact-studio-jhamy" class="hover:text-gray-200 transition" aria-label="Contacter Studio Jhamy">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20" role="main">
+        <div class="container mx-auto px-6 text-center">
+            <div class="floating mb-8">
+                <div class="w-32 h-32 mx-auto bg-white/20 rounded-3xl flex items-center justify-center glass-effect" aria-hidden="true">
+                    <i class="fas fa-robot text-6xl" title="Intelligence artificielle cuisine"></i>
+                </div>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                FeastyApp - Application Cuisine IA
+                <span class="block text-3xl md:text-4xl font-normal mt-2 text-gray-200">
+                    Recettes Personnalisées & Cuisine Collaborative Intelligente
+                </span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                <strong>Révolutionnez votre cuisine en groupe</strong> avec notre <strong>intelligence artificielle Gemini</strong> ! 
+                Application de <strong>cuisine collaborative</strong> parfaite pour les <strong>familles, colocataires et groupes d'amis</strong> 
+                cherchant des <strong>recettes personnalisées</strong> et des <strong>menus automatiques</strong>.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://play.google.com/store/apps/details?id=com.jhamy35.feastyapp.revival" 
+                   target="_blank"
+                   rel="noopener"
+                   class="group bg-white text-gray-900 px-8 py-4 rounded-2xl font-semibold text-lg flex items-center space-x-3 hover:bg-gray-100 transition-all transform hover:scale-105"
+                   aria-label="Télécharger FeastyApp gratuitement sur Google Play Store">
+                    <i class="fab fa-google-play text-2xl text-green-600" aria-hidden="true"></i>
+                    <span>Télécharger Application Cuisine Gratuite</span>
+                    <i class="fas fa-external-link-alt group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+                </a>
+                
+                <div class="flex items-center space-x-2 text-sm bg-white/10 px-4 py-2 rounded-xl glass-effect">
+                    <i class="fas fa-download" aria-hidden="true"></i>
+                    <span>50+ téléchargements Google Play</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fonctionnalites-cuisine-ia" class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+                    Fonctionnalités Révolutionnaires de Cuisine Intelligente
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Découvrez comment <strong>FeastyApp transforme votre expérience culinaire</strong> avec l'<strong>intelligence artificielle Gemini</strong>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Smart Discovery -->
+                <article class="card-hover bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-8 rounded-3xl">
+                    <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+                        <i class="fas fa-magic text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">✨ DÉCOUVERTE INTELLIGENTE D'INGRÉDIENTS</h3>
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1" aria-hidden="true"></i>
+                            <span>Explorez <strong>1000+ ingrédients populaires</strong> avec système de swipe</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1" aria-hidden="true"></i>
+                            <span><strong>IA culinaire Gemini</strong> pour recettes personnalisées automatiques</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1" aria-hidden="true"></i>
+                            <span><strong>Algorithme de compatibilité alimentaire</strong> unique et innovant</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Collaborative Cooking -->
+                <article class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-8 rounded-3xl">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+                        <i class="fas fa-users text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">👥 CUISINE COLLABORATIVE EN FAMILLE</h3>
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1" aria-hidden="true"></i>
+                            <span><strong>Groupes famille/amis/colocataires</strong> pour cuisine partagée</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1" aria-hidden="true"></i>
+                            <span><strong>Consensus automatique des goûts</strong> grâce à l'IA</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1" aria-hidden="true"></i>
+                            <span><strong>Respect des allergies alimentaires</strong> et régimes spéciaux</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Creative Generation -->
+                <article class="card-hover bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-8 rounded-3xl">
+                    <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+                        <i class="fas fa-brain text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">🤖 GÉNÉRATION CRÉATIVE DE RECETTES IA</h3>
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1" aria-hidden="true"></i>
+                            <span><strong>Recettes adaptées à VOS goûts</strong> spécifiques et préférences</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1" aria-hidden="true"></i>
+                            <span><strong>Listes de courses automatiques</strong> générées par intelligence artificielle</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <i class="fas fa-check text-green-500 mt-1" aria-hidden="true"></i>
+                            <span><strong>Application cuisine gratuite</strong> en français - téléchargement libre</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+                    Comment fonctionne l'Application Cuisine IA ?
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300">
+                    <strong>Cuisine intelligente</strong> en 4 étapes simples avec <strong>technologie Gemini</strong>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
+                        <span class="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Swipez les ingrédients cuisine</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Découvrez et <strong>aimez vos ingrédients favoris</strong> parmi 1000+ options</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
+                        <span class="text-2xl font-bold text-white">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Créez votre groupe cuisine</h3>
+                    <p class="text-gray-600 dark:text-gray-300"><strong>Invitez famille et amis</strong> pour cuisine collaborative</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
+                        <span class="text-2xl font-bold text-white">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">IA Gemini génère les recettes</h3>
+                    <p class="text-gray-600 dark:text-gray-300"><strong>Intelligence artificielle</strong> crée des <strong>recettes personnalisées</strong></p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
+                        <span class="text-2xl font-bold text-white">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Cuisinez ensemble intelligemment</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Préparez des <strong>plats que tout le monde aime</strong> avec consensus IA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section SEO -->
+    <section class="py-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+                    Pourquoi choisir FeastyApp pour votre Cuisine Intelligente ?
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6">
+                    <i class="fas fa-robot text-4xl text-purple-500 mb-4" aria-hidden="true"></i>
